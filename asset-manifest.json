@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/intrck/static/css/main.1740469c.chunk.css",
+    "main.js": "/intrck/static/js/main.04f36944.chunk.js",
+    "main.js.map": "/intrck/static/js/main.04f36944.chunk.js.map",
+    "runtime-main.js": "/intrck/static/js/runtime-main.f3eb7b44.js",
+    "runtime-main.js.map": "/intrck/static/js/runtime-main.f3eb7b44.js.map",
+    "static/js/2.58f77b86.chunk.js": "/intrck/static/js/2.58f77b86.chunk.js",
+    "static/js/2.58f77b86.chunk.js.map": "/intrck/static/js/2.58f77b86.chunk.js.map",
+    "index.html": "/intrck/index.html",
+    "static/css/main.1740469c.chunk.css.map": "/intrck/static/css/main.1740469c.chunk.css.map",
+    "static/js/2.58f77b86.chunk.js.LICENSE.txt": "/intrck/static/js/2.58f77b86.chunk.js.LICENSE.txt",
+    "static/media/arrow.f84e6a0f.svg": "/intrck/static/media/arrow.f84e6a0f.svg",
+    "static/media/arrow_dedicated.be979ce6.svg": "/intrck/static/media/arrow_dedicated.be979ce6.svg",
+    "static/media/style.css": "/intrck/static/media/background.97c5e50f.png",
+    "static/media/biznes-icon.8780d064.svg": "/intrck/static/media/biznes-icon.8780d064.svg",
+    "static/media/city-icon.dbcd354b.svg": "/intrck/static/media/city-icon.dbcd354b.svg",
+    "static/media/icon.55fe9172.svg": "/intrck/static/media/icon.55fe9172.svg",
+    "static/media/image1.7cf727ee.png": "/intrck/static/media/image1.7cf727ee.png",
+    "static/media/image_section_entries.e2bd97b9.png": "/intrck/static/media/image_section_entries.e2bd97b9.png",
+    "static/media/it-icon.89103dc5.svg": "/intrck/static/media/it-icon.89103dc5.svg",
+    "static/media/logo_name.e8f7af02.svg": "/intrck/static/media/logo_name.e8f7af02.svg",
+    "static/media/menu.7875fc22.svg": "/intrck/static/media/menu.7875fc22.svg",
+    "static/media/mov_bbb.2c92d012.mp4": "/intrck/static/media/mov_bbb.2c92d012.mp4",
+    "static/media/phones.cfa3feec.png": "/intrck/static/media/phones.cfa3feec.png",
+    "static/media/stream2.a2eb8e70.svg": "/intrck/static/media/stream2.a2eb8e70.svg",
+    "static/media/stream3.fdcde699.svg": "/intrck/static/media/stream3.fdcde699.svg",
+    "static/media/stream4.0ead41ef.svg": "/intrck/static/media/stream4.0ead41ef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3eb7b44.js",
+    "static/js/2.58f77b86.chunk.js",
+    "static/css/main.1740469c.chunk.css",
+    "static/js/main.04f36944.chunk.js"
+  ]
+}
