@@ -1,0 +1,58 @@
+.main_section {
+    background-size: cover;
+    background-image: 
+    linear-gradient(
+        rgba(30, 40, 52, 0.9),
+        rgba(30, 40, 52, 0.9)
+    ),
+    url('../../images/background.png');
+}
+
+.main_section_button {
+    padding: 100px 0 42px 0;
+}
+
+.main_section__text {
+    color:#fff;
+    margin: 0 auto 30px;
+    text-align: center;
+    max-width: 330px;
+}
+
+.arrow {
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1024px)  {
+    .phones {
+        width:100%;
+    }
+    .main_section__text {
+        font-size: 28px;
+        margin: 0 auto;
+    }
+    .arrow {
+        display: none;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1024px)  {
+
+    .phones {
+        width:auto;
+    }
+
+
+    .main_section__text {
+        font-size: 50px;
+        max-width: 580px;
+        line-height: 60px;
+    }
+
+    .main_section_button {
+        display: none;;
+    }
+}

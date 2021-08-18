@@ -1,0 +1,29 @@
+button {
+    outline: none;
+    background-color: #fff;
+    border:none;
+    border: 1px solid #253140;
+    font-size: 15px;
+    border-radius: 30px;
+    padding: 14px 38px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    color:#fff;
+    background-color: #1E2834;
+}
+
+.second {
+    font-weight: 600;
+    color:#fff;
+    background-color: #1E2834;
+    font-size: 20px;
+
+}
+
+.second:hover {
+    background-color: #fff;
+    color:#1E2834;
+}
