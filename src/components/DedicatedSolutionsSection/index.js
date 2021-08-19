@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import Carousel from "react-spring-3d-carousel";
 import { config } from "react-spring";
 import './style.css';
-import iphoneBiznes from "../../images/mock.png"
-import iphoneCity from "../../images/mock.png";
-import iphoneIt from "../../images/mock.png";
+import iphone from './iphone.png';
 import iconIt from "../../images/it-icon.svg";
 import iconCity from "../../images/city-icon.svg";
 import iconBiznes from "../../images/biznes-icon.svg";
@@ -12,7 +10,7 @@ import arrow from '../../images/arrow_dedicated.svg';
 
 const DedicatedSolutionsSection = ({ setSectionType }) => {
     const [state, setState] = useState({
-        goToSlide: 0,
+        goToSlide: 1,
         offsetRadius: 10,
         showNavigation: false,
         config: config.slow
@@ -27,7 +25,7 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
                     <img src={iconCity} alt='icon'/>
                     <p>Dla miast</p>
                 </div>
-              <img src={iphoneCity} alt="1" style={{ maxHeight: 500 }} />
+              <img src={iphone} alt="1" style={{ maxHeight: 500 }} />
             </div>
           )
         },
@@ -39,7 +37,7 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
                     <img src={iconBiznes} alt='icon'/>
                     <p>Dla biznesu</p>
                 </div>
-              <img src={iphoneBiznes} alt="1" style={{ maxHeight: 500 }} />
+              <img src={iphone} alt="1" style={{ maxHeight: 500 }} />
             </div>
           )
         },
@@ -51,7 +49,7 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
                     <img src={iconIt} alt='icon'/>
                     <p>Dla IT</p>
                 </div>
-              <img src={iphoneIt} alt="1" style={{ maxHeight: 500 }} />
+              <img src={iphone} alt="1" style={{ maxHeight: 500 }} />
             </div>
           )
         }
@@ -59,6 +57,7 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
         return {
           ...slide,
           onClick: () => {
+            console.log('klik ???')
             setState({ goToSlide: index });
           }
         };
@@ -103,7 +102,8 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
       };
     
       const handleNext = () => {
-        if (state.goToSlide >= 3) {
+        console.log('next ??')
+        if (state.goToSlide === 3) {
           setState({ goToSlide: 0 });
         } else {
           setState({ goToSlide: state.goToSlide + 1 });
@@ -122,6 +122,7 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
         setSectionType(state.goToSlide);
       },[state.goToSlide,setSectionType])
 
+      console.log(state.goToSlide)
       return (
           <div className='wrapper_dedicated_solution_section'>
                 <div className='wrapper_dedicated_solution_section__header'>Rozwiązania dedykowane</div>
@@ -138,11 +139,11 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
                     animationConfig={state.config}
                 />
                 <div className="arrow_carousel">
-                    <div className='arrow_box' onClick={handleNext}>
-                        <img src={arrow} alt='arrow'/>
+                    <div className='arrow_box'>
+                        <img src={arrow} alt='arrow' onClick={handleNext}/>
                     </div>
-                    <div className='arrow_box' onClick={handlePrevious}>
-                        <img src={arrow} alt='arrow' className='arrow_rotate'/>
+                    <div className='arrow_box' >
+                        <img src={arrow} alt='arrow' className='arrow_rotate' onClick={handlePrevious}/>
                     </div>
                 </div>
                 </div>

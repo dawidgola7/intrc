@@ -38,6 +38,7 @@
 .wrapper_dedicatedsection__information--description {
     font-size: 14px;
     margin-top: 5%;
+    color:#707070
 }
 
 @media only screen and (min-width: 1366px)  { 
@@ -50,6 +51,7 @@
         font-size: 88px;
         margin-top: 1%;
         max-width: 510px;
+        line-height: 80px;
     }
 
     .wrapper_dedicatedsection__information--icon {
@@ -59,7 +61,7 @@
     .wrapper_dedicatedsection__information--description {
         font-size: 25px;
         margin-top: 1%;
-        max-width: 510px;
+        max-width: 557px;
     }
 
     .stream_dedicated {

@@ -1,0 +1,30 @@
+.wrapper_getcasestudy {
+    background: #EAEAEA;
+    padding:68px 20px;
+    position: relative;
+}
+
+.wrapper_getcasestudy__header {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.wrapper_getcasestudy__image {
+    display: none;
+}
+
+
+@media only screen and (min-width: 1366px)  {  
+    .wrapper_getcasestudy__header {
+        font-size: 45px;
+        text-align: center;
+        width: 39%;
+        margin: 0 auto;
+    }
+
+    .wrapper_getcasestudy__image {
+        display: block;
+        width: 100%;
+    }
+
+}

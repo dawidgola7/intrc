@@ -5,6 +5,7 @@ import './App.css';
 import AnimationSection from './components/AnimationSection';
 import DedicatedSection from './components/DedicatedSection';
 import DedicatedSolutionsSection from './components/DedicatedSolutionsSection';
+import GetCaseStudy from './components/GetCaseStudy';
 import MainSection from './components/MainSection';
 import SectionEntries from './components/SectionEntries';
 import SectionForBiznes from './components/SectionForBiznes';
@@ -32,7 +33,7 @@ function App() {
       <AnimationSection video={video1} />
       <DedicatedSolutionsSection  setSectionType={setSectionType}/>
       {getSection(sectionType)}
-      <DedicatedSection />
+      <GetCaseStudy />
     </div>
   );
 }
