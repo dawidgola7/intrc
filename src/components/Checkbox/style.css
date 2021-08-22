@@ -1,0 +1,29 @@
+.wrapper_checkbox {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px 10px 0;
+}
+
+.wrapper_checkbox__check {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #253140;
+    border-radius: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper_checkbox__checked {
+    width: 10px;
+    height: 10px;
+    background: #253140;
+    border-radius: 4px;
+}
+
+.wrapper_checkbox__text {
+    color:#253140;
+    font-size:12px;
+}

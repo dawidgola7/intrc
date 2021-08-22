@@ -6,7 +6,7 @@ import logo from '../../images/logo_name.svg';
 import menu from '../../images/menu.svg';
 
 
-const Header = () => {
+const Header = ({ handleSetShowForm }) => {
     const { t, i18n } = useTranslation();
 
 
@@ -14,14 +14,14 @@ const Header = () => {
         <div className="header">
             <img src={logo} alt='intrack_logo' className="logo" />
             <div className="header_manage">
-                <Button>{t('try_the_demo')}</Button>
+                <Button onClick={handleSetShowForm}>{t('try_the_demo')}</Button>
                 <div className="header_language">
                     <span onClick={() => i18n.changeLanguage("pl")}>PL</span>
                     <span className='seperator'></span>
                     <span onClick={()=> i18n.changeLanguage("en")}>EN</span>
                 </div>
             </div>
-            <div className="header_menu__mobile">
+            <div className="header_menu__mobile" onClick={handleSetShowForm}>
                 <img src={menu} alt='menu' />
             </div>
         </div>

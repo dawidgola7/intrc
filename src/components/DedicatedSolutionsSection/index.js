@@ -2,13 +2,18 @@ import React, { useState, useEffect } from "react";
 import Carousel from "react-spring-3d-carousel";
 import { config } from "react-spring";
 import './style.css';
-import iphone from './iphone.png';
+import iphone_city from './iphone_city.png';
+import iphone_biznes from './iphone_biznes.png';
+import iphone_it from './iphone_it.png';
 import iconIt from "../../images/it-icon.svg";
 import iconCity from "../../images/city-icon.svg";
 import iconBiznes from "../../images/biznes-icon.svg";
 import arrow from '../../images/arrow_dedicated.svg';
+import { useTranslation } from "react-i18next";
 
 const DedicatedSolutionsSection = ({ setSectionType }) => {
+    const { t } = useTranslation();
+
     const [state, setState] = useState({
         goToSlide: 1,
         offsetRadius: 10,
@@ -23,9 +28,9 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
             <div className="dedicates_solution_item">
                 <div>
                     <img src={iconCity} alt='icon'/>
-                    <p>Dla miast</p>
+                    <p>{t('for_city')}</p>
                 </div>
-              <img src={iphone} alt="1" style={{ maxHeight: 500 }} />
+              <img src={iphone_city} alt="1" style={{ maxHeight: 500 }} />
             </div>
           )
         },
@@ -35,9 +40,9 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
             <div className="dedicates_solution_item">
                 <div>
                     <img src={iconBiznes} alt='icon'/>
-                    <p>Dla biznesu</p>
+                    <p>{t('for_bussines')}</p>
                 </div>
-              <img src={iphone} alt="1" style={{ maxHeight: 500 }} />
+              <img src={iphone_biznes} alt="1" style={{ maxHeight: 500 }} />
             </div>
           )
         },
@@ -47,9 +52,9 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
             <div className="dedicates_solution_item">
                 <div>
                     <img src={iconIt} alt='icon'/>
-                    <p>Dla IT</p>
+                    <p>{t('for_it')}</p>
                 </div>
-              <img src={iphone} alt="1" style={{ maxHeight: 500 }} />
+              <img src={iphone_it} alt="1" style={{ maxHeight: 500 }} />
             </div>
           )
         }
@@ -125,11 +130,8 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
       console.log(state.goToSlide)
       return (
           <div className='wrapper_dedicated_solution_section'>
-                <div className='wrapper_dedicated_solution_section__header'>Rozwiązania dedykowane</div>
-                <div
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
-                className="wrapper_dedicated_solution_section__carousel"
+                <div className='wrapper_dedicated_solution_section__header'>{t('solutions_dedicated')}</div>
+                <div className="wrapper_dedicated_solution_section__carousel"
                 >
                 <Carousel
                     slides={slides}

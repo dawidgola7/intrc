@@ -1,0 +1,28 @@
+.wrapper_input {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+
+.wrapper_input__title {
+    font-size: 16px;
+}
+
+.wrapper_input__input {
+    outline: none;
+    border: 0;
+    background: inherit;
+    border-bottom: 1px solid #BBBBCA;
+    max-width: 390px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.wrapper_input__input::placeholder {
+    color: #253140;
+  }
