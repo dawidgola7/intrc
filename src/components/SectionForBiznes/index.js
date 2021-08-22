@@ -1,6 +1,8 @@
 import React from 'react'
 import DedicatedSection from '../DedicatedSection'
 import imageBackground1 from './image1.png'
+import imageBackground2 from './image2.png'
+import imageBackground3 from './image2.png'
 import iconBiznes from './icon.svg';
 
 
@@ -9,24 +11,24 @@ const SectionForBiznes = () => {
         <>
             <DedicatedSection 
                 colorSection='#253140' 
-                title='dla Biznesu' 
+                title='for_bussines' 
                 backgroundImage={imageBackground1} 
                 iconText={iconBiznes}
-                description='Automatyzacja procesów biznesowych zasadniczo zwiększa prędkość działania ﬁrm.'
+                description='biznes_desc_1'
             />
             <DedicatedSection 
                 colorSection='#253140' 
-                title='dla Biznesu'
-                backgroundImage={imageBackground1} 
+                title='for_bussines'
+                backgroundImage={imageBackground2} 
                 iconText={iconBiznes}
-                description='Banki są w stanie w kilkadziesiąt sekund od momentu złożenia wniosku zweryﬁkować zdolność kredytową, historie pożyczek i zachowania konsumenckie osób starających się o kredyt.'
+                description='biznes_desc_2'
             />
             <DedicatedSection 
                 colorSection='#253140' 
-                title='dla Biznesu'
-                backgroundImage={imageBackground1} 
+                title='for_bussines'
+                backgroundImage={imageBackground3} 
                 iconText={iconBiznes}
-                description='Banki są w stanie w kilkadziesiąt sekund od momentu złożenia wniosku zweryﬁkować zdolność kredytową, historie pożyczek i zachowania konsumenckie osób starających się o kredyt.'
+                description='biznes_desc_3'
             />
         </>
     )

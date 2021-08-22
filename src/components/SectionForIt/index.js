@@ -2,34 +2,31 @@ import React from 'react'
 import DedicatedSection from '../DedicatedSection'
 import iconIT from './icon.svg'
 import imageBackground1 from './image1.png'
+import imageBackground2 from './image2.png'
+import imageBackground3 from './image3.png'
+import imageBackground4 from './image4.png'
 
 
 const SectionForIt = () => {
     return (
         <>
             <DedicatedSection  
-                title='dla IT' 
+                title='for_it' 
                 backgroundImage={imageBackground1} 
                 iconText={iconIT}
-                description='Platforma inTrack w trybie ciągłym i natychmiastowym klasyﬁkuje i przypisuje wszystkie zdarzenia do określonych komponentów środowiska IT.'
+                description='it_desc_1'
             />
             <DedicatedSection  
-                title='dla IT'
-                backgroundImage={imageBackground1} 
+                title='for_it'
+                backgroundImage={imageBackground2} 
                 iconText={iconIT}
-                description='Dzięki temu użytkownik dysponuje pełną wiedzą, zarówno historyczną, jak i konﬁguracyjną czy ﬁnansową, o każdym zasobie czy procesie.'
+                description='it_desc_2'
             />
             <DedicatedSection  
-                title='dla IT'
-                backgroundImage={imageBackground1} 
+                title='for_it'
+                backgroundImage={imageBackground3} 
                 iconText={iconIT}
-                description='Dane przedstawiane są w formie starannej i zrozumiałej wizualizacji, dostosowanej do kontekstu działania i potrzeb odbiorcy.'
-            />
-            <DedicatedSection  
-                title='dla IT'
-                backgroundImage={imageBackground1} 
-                iconText={iconIT}
-                description='Dane przedstawiane są w formie starannej i zrozumiałej wizualizacji, dostosowanej do kontekstu działania i potrzeb odbiorcy.'
+                description='it_desc_3'
             />
         </>
     )

@@ -2,6 +2,8 @@ import React from 'react'
 import DedicatedSection from '../DedicatedSection'
 import iconCity from './icon.svg';
 import imageBackground1 from './image1.png';
+import imageBackground2 from './image2.png';
+import imageBackground3 from './image3.png';
 
 
 const SectionForCity = () => {
@@ -9,24 +11,24 @@ const SectionForCity = () => {
         <>
             <DedicatedSection 
                 colorSection='#253140' 
-                title='dla Miast'
+                title='for_city'
                 backgroundImage={imageBackground1} 
                 iconText={iconCity}
-                description='Zarządzanie miastem to koordynacja działań wielu służb i instytucji, monitorowana w centrach zarządzania za pomocą systemów łączności, czujników i kamer.'
+                description='city_desc_1'
             />
             <DedicatedSection 
                 colorSection='#253140' 
-                title='dla Miast'
-                backgroundImage={imageBackground1} 
+                title='for_city'
+                backgroundImage={imageBackground2} 
                 iconText={iconCity}
-                description='inTrack umożliwia włączenie w ten proces informacji od mieszkańców, co może znacząco wpłynąć na szybkość i skuteczność likwidowania usterek i problemów.'
+                description='city_desc_2'
             />
             <DedicatedSection 
                 colorSection='#253140' 
-                title='dla Miast'
-                backgroundImage={imageBackground1} 
+                title='for_city'
+                backgroundImage={imageBackground3} 
                 iconText={iconCity}
-                description='Zdarzenia i ich skutki są zaznaczone w cyfrowym modelu miasta i przedstawione na mapach z warstwami infrastruktury. Geograﬁczna koncentracja zdarzeń i liczba zgłaszających osób służą jako kryterium pilności działania.'
+                description='city_desc_3'
             />
         </>
     )
