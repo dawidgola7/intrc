@@ -1,0 +1,57 @@
+.wrapper_opinion {
+    background: #253140;
+    padding: 68px 20px;
+    position: relative;
+    height: 710px;
+}
+
+.wrapper_opinion__header {
+    font-size: 25px;
+    font-weight: bold;
+    color:#FFFFFF;
+}
+
+.wrapper_opinion_carousel {
+    height: 100%;
+}
+
+
+.opinion_carousel__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.opinion_carousel__item--desc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.opinion_carousel__item--desc--name {
+    font-size: 25px;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+.opinion_carousel__item--desc--company {
+    color:#626971
+}
+
+@media only screen and (min-width: 1024px)  {  
+
+    .wrapper_opinion__header {
+        font-size: 40px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+
+    .wrapper_opinion_carousel {
+        height: 700px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+ 
+}

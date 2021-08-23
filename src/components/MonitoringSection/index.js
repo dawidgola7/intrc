@@ -8,9 +8,9 @@ import line1_mobile from './mobile_line_1.png';
 import line2_mobile from './mobile_line_2.png';
 import line3_mobile from './mobile_line_3.png';
 import line4_mobile from './mobile_line_4.png';
-import './style.css';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next'
+import './style.css';
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;

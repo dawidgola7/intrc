@@ -8,6 +8,7 @@ import GetCaseStudy from './components/GetCaseStudy';
 import MainForm from './components/MainForm';
 import MainSection from './components/MainSection';
 import MonitoringSection from './components/MonitoringSection';
+import OpinionSection from './components/OpinionSection';
 import SectionEntries from './components/SectionEntries';
 import SectionForBiznes from './components/SectionForBiznes';
 import SectionForCity from './components/SectionForCity';
@@ -30,7 +31,6 @@ function App() {
     setShowForm(prev => !prev)
   }
 
-
   return (
     <div className="App">
       {showForm && <MainForm handleSetShowForm={handleSetShowForm}/>}
@@ -50,6 +50,7 @@ function App() {
       <AnimationSection video={video1} videoEn='https://samplelib.com/lib/preview/mp4/sample-5s.mp4'/>
       <MonitoringSection/>
       <SupportUsersSection/>
+      <OpinionSection/>
     </div>
   );
 }
