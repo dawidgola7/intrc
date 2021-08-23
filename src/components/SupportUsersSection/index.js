@@ -60,17 +60,3 @@ const SupportUsersSection = () => {
 }
 
 export default SupportUsersSection;
-
-
-{/* <div className="item_svg">
-{item('rgb(37, 49, 64)')}
-</div>
-<div className="item_svg">
-{item2('rgb(37, 49, 64)')}
-</div>
-<div className="item_svg">
-{item3('rgb(37, 49, 64)')}
-</div>
-<div className="item_svg">
-{item4('rgb(37, 49, 64)')}
-</div> */}
