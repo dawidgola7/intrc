@@ -1,5 +1,6 @@
 .wrapper_dedicatedsection {
     position: relative;
+    padding: 5%;
     padding-bottom: 10%;
 }
 
@@ -32,7 +33,7 @@
 }
 
 .wrapper_dedicatedsection__information--icon {
-    width:30%;
+    width:28%;
 }
 
 .wrapper_dedicatedsection__information--description {
@@ -42,6 +43,11 @@
 }
 
 @media only screen and (min-width: 1366px)  { 
+
+    .wrapper_dedicatedsection {
+        padding:0;
+        padding-bottom: 10%;
+    }
 
     .image_dedicated {
         width:auto;

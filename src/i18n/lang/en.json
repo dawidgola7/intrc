@@ -32,5 +32,14 @@
     "confirm_marketing":"consent to marketing communication",
     "video":"https://www.w3schools.com/html/mov_bbb.mp4",
     "try_intrack_today" :"Try inTrack today",
-    "try_intrack_demo":"To try our demo version, please contact us"
+    "try_intrack_demo":"To try our demo version, please contact us",
+    "monitoring_desc_1":"Monitor key processes in real-time",
+    "monitoring_desc_2":"Increase the efficiency of analysing resources and operations",
+    "monitoring_desc_3":"Identify problems in advance",
+    "monitoring_desc_4":"virtual assistant with flexible configuration and continuous monitoring of events",
+    "support_header":"We support our users in data processing",
+    "support_desc_1":"then from the resulting reality model, an extract relevant for a given moment is presented in a friendly format",
+    "support_desc_2":"automatically monitoring and modelling the condition of resources, notifying the responsible people in case of an emergency",
+    "support_desc_3":"showing the relationships and dependencies between the model components to enable the drawing of synthetic and analytic conclusions",
+    "support_desc_4":"delivering the information necessary for decision-making on an ongoing basis"
 }

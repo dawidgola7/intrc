@@ -30,6 +30,7 @@
 .main_form__cancel {
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
 }
 
 .main_form__header {

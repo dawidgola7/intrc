@@ -1,17 +1,18 @@
 /* eslint-disable no-fallthrough */
 import React, {useState} from 'react';
-import { useSSR } from 'react-i18next';
+import { CSSTransition } from 'react-transition-group';
 import './App.css';
 import AnimationSection from './components/AnimationSection';
-import DedicatedSection from './components/DedicatedSection';
 import DedicatedSolutionsSection from './components/DedicatedSolutionsSection';
 import GetCaseStudy from './components/GetCaseStudy';
 import MainForm from './components/MainForm';
 import MainSection from './components/MainSection';
+import MonitoringSection from './components/MonitoringSection';
 import SectionEntries from './components/SectionEntries';
 import SectionForBiznes from './components/SectionForBiznes';
 import SectionForCity from './components/SectionForCity';
 import SectionForIt from './components/SectionForIt';
+import SupportUsersSection from './components/SupportUsersSection';
 import video1 from './movies/mov_bbb.mp4'
 
 
@@ -37,9 +38,18 @@ function App() {
       <SectionEntries />
       <AnimationSection video={video1} videoEn='https://samplelib.com/lib/preview/mp4/sample-5s.mp4'/>
       <DedicatedSolutionsSection  setSectionType={setSectionType}/>
+      <CSSTransition
+        timeout={400}
+        in={true}
+        classNames="popup"
+        unmountOnExit
+      >
       {getSection(sectionType)}
+      </CSSTransition>
       <GetCaseStudy />
       <AnimationSection video={video1} videoEn='https://samplelib.com/lib/preview/mp4/sample-5s.mp4'/>
+      <MonitoringSection/>
+      <SupportUsersSection/>
     </div>
   );
 }
