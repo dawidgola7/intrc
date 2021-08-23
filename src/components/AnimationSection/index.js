@@ -10,11 +10,11 @@ const AnimationSection = ({ video, videoEn  }) => {
     return (
         <div className='wrapper_animation'>
             {i18n.language === 'pl' ? (
-                <video controls >
+                <video controls key='1' >
                     <source src={video} type="video/mp4"/>
                 </video>
             ) : (
-                <video controls >
+                <video controls key='2'>
                     <source src={videoEn} type="video/mp4"/>
                 </video>
             )}

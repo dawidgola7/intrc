@@ -1,5 +1,5 @@
 .main_section {
-    background-size: cover;
+    background-size: contain;
     background-image: 
     linear-gradient(
         rgba(30, 40, 52, 0.9),
