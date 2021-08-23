@@ -2,7 +2,7 @@
     background: #253140;
     padding: 68px 20px;
     position: relative;
-    height: 710px;
+    min-height: 710px;
 }
 
 .wrapper_opinion__header {
@@ -12,7 +12,7 @@
 }
 
 .wrapper_opinion_carousel {
-    height: 100%;
+    height: 400px;
 }
 
 
@@ -39,7 +39,50 @@
     color:#626971
 }
 
+.wrapper_opinion_carousel--desc {
+    position: relative;
+    display: flex;
+    min-height: 130px;
+    align-items: center;
+    max-width: 800px;
+    margin: 70px auto 0;
+}
+
+.wrapper_opinion_carousel--desc--text {
+    max-width: 800px;
+    color:#626971;
+    font-weight: bold;
+    margin:0 auto;
+    padding: 10px;
+}
+
+.left_quote {
+    position:absolute;
+    left: 0;
+    top:-55px;
+}
+
+.right_quote {
+    position:absolute;
+    right:0;
+    bottom:-55px;
+}
+
+
 @media only screen and (min-width: 1024px)  {  
+
+
+    .left_quote {
+        position:absolute;
+        left:-50px;
+        top:0;
+    }
+    
+    .right_quote {
+        position:absolute;
+        right:-50px;
+        bottom:0;
+    }
 
     .wrapper_opinion__header {
         font-size: 40px;
@@ -49,7 +92,7 @@
 
 
     .wrapper_opinion_carousel {
-        height: 700px;
+        height: 440px;
         max-width: 1000px;
         margin: 0 auto;
     }
