@@ -1,0 +1,129 @@
+
+.wrapper_contact {
+    padding:0;
+    background-color: #EAEAEA;
+}
+
+
+.wrapper_contact--contact {
+    background-color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.wrapper_contact--footer { 
+    font-size: 12px;
+    padding:10px 10px;
+    background: white;
+}
+
+.wrapper_contact--footer div { 
+    padding:10px 10px;
+}
+
+.wrapper_contact--contact-info {
+    padding:20px 10px;
+}
+
+.wrapper_contact--contact-header {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.wrapper_contact--contact-phone,
+.wrapper_contact--contact-email {
+    font-size: 30px;
+}
+
+.wrapper_contact--contact-line {
+    border:1px solid #707070;
+    max-width: 300px;
+    margin: 10px auto;
+
+}
+
+
+.wrapper_contact--contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .wrapper_contact--contact-line {
+        display: none;
+    }
+
+    .wrapper_contact {
+        padding:56px;
+        background-color: #fff;
+    }
+
+    .wrapper_contact--contact {
+        padding: 60px;
+        flex-direction: row;
+    }
+
+    .wrapper_contact--footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 50px 0;
+        font-size: 15px;;
+    }
+
+    .wrapper_contact--footer div { 
+        padding:0;
+    }
+
+    .wrapper_contact--contact-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10px;
+        text-align: left;
+        max-width: 400px;
+        border-right:1px solid #707070;
+    }
+
+    .wrapper_contact--contact-header {
+        max-width: 233px; 
+    }
+
+    .wrapper_contact--contact-form {
+        flex:2;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 30px;
+    }
+
+    .wrapper_contact--contact-form--button {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .wrapper_contact--contact-form--inputs {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 770px;
+    }
+    .wrapper_contact--contact-form--input {
+        margin:0 20px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1300px) {
+
+    .wrapper_contact--contact-form {
+        padding: 0 80px;
+    }
+
+}

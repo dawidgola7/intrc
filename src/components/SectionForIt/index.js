@@ -9,7 +9,7 @@ import imageBackground4 from './image4.png'
 
 const SectionForIt = () => {
     return (
-        <>
+        <div style={{transition: "all .2s ease-in-out"}}>
             <DedicatedSection  
                 title='for_it' 
                 backgroundImage={imageBackground1} 
@@ -28,7 +28,7 @@ const SectionForIt = () => {
                 iconText={iconIT}
                 description='it_desc_3'
             />
-        </>
+        </div>
     )
 }
 

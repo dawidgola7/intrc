@@ -8,7 +8,7 @@ import iconBiznes from './icon.svg';
 
 const SectionForBiznes = () => {
     return (
-        <>
+        <div style={{transition: "all .2s ease-in-out"}}>
             <DedicatedSection 
                 colorSection='#253140' 
                 title='for_bussines' 
@@ -30,7 +30,7 @@ const SectionForBiznes = () => {
                 iconText={iconBiznes}
                 description='biznes_desc_3'
             />
-        </>
+        </div>
     )
 }
 

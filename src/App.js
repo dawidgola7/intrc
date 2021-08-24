@@ -1,8 +1,9 @@
 /* eslint-disable no-fallthrough */
 import React, {useState} from 'react';
-import { CSSTransition } from 'react-transition-group';
+import CSSTransitionGroup from 'react-addons-css-transition-group';
 import './App.css';
 import AnimationSection from './components/AnimationSection';
+import Contact from './components/Contact';
 import DedicatedSolutionsSection from './components/DedicatedSolutionsSection';
 import GetCaseStudy from './components/GetCaseStudy';
 import MainForm from './components/MainForm';
@@ -38,19 +39,18 @@ function App() {
       <SectionEntries />
       <AnimationSection video={video1} videoEn='https://samplelib.com/lib/preview/mp4/sample-5s.mp4'/>
       <DedicatedSolutionsSection  setSectionType={setSectionType}/>
-      <CSSTransition
-        timeout={400}
-        in={true}
-        classNames="popup"
-        unmountOnExit
-      >
-      {getSection(sectionType)}
-      </CSSTransition>
+      <CSSTransitionGroup
+          transitionName="example"
+          transitionEnterTimeout={300}
+          transitionLeaveTimeout={300}>
+        {getSection(sectionType)}
+      </CSSTransitionGroup>
       <GetCaseStudy />
       <AnimationSection video={video1} videoEn='https://samplelib.com/lib/preview/mp4/sample-5s.mp4'/>
       <MonitoringSection/>
       <SupportUsersSection/>
       <OpinionSection/>
+      <Contact/>
     </div>
   );
 }

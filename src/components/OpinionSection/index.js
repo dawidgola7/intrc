@@ -136,7 +136,7 @@ const OpinionSection = () => {
 console.log(state,slides)
     return (
         <div className="wrapper_opinion">
-            <div className="wrapper_opinion__header">Poznaj opinie użytkowników inTrack</div>
+            <div className="wrapper_opinion__header">{t('opinion_header')}</div>
             <div className='wrapper_opinion_carousel--desc'>
                 <img src={left_quote} alt='left_quote' className="left_quote"/>
                 <div className='wrapper_opinion_carousel--desc--text'>{slides[state.goToSlide].text}</div>
