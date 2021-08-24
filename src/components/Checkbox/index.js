@@ -1,12 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './style.css';
 
 const Checkbox = ({ text , onClick}) => {
 
-    const { t } =useTranslation();
+    const { t } = useTranslation();
 
-    const [checked,setChecked]=useState(false);
+    const [ checked, setChecked ] = useState(false);
 
     const handleClick = () => {
         setChecked(prev => !prev)

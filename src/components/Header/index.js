@@ -9,7 +9,6 @@ import menu from '../../images/menu.svg';
 const Header = ({ handleSetShowForm }) => {
     const { t, i18n } = useTranslation();
 
-
     return (
         <div className="header">
             <img src={logo} alt='intrack_logo' className="logo" />

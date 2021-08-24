@@ -1,230 +1,208 @@
-
-
 .monitoring_section__wrapper {
-    background-color: #EAEAEA;
-    position: relative;
-    min-height: 740px;
-    display: flex;
-    align-items: center;
+  background-color: #eaeaea;
+  position: relative;
+  min-height: 740px;
+  display: flex;
+  align-items: center;
 }
 
 .monitoring_section__image {
-    width: 100%;
-    position: relative;
-    z-index: 99;
+  width: 100%;
+  position: relative;
+  z-index: 99;
 }
 .monitoring_section__1,
 .monitoring_section__2,
 .monitoring_section__3,
 .monitoring_section__4 {
-    font-size: 14px;
-    position: absolute;
+  font-size: 14px;
+  position: absolute;
 }
-
-
 
 .monitoring_section__1_m,
 .monitoring_section__2_m,
 .monitoring_section__3_m,
 .monitoring_section__4_m {
-    position: absolute;
+  position: absolute;
 }
 
 .monitoring_section__1_text_m,
 .monitoring_section__2_text_m,
 .monitoring_section__3_text_m,
 .monitoring_section__4_text_m {
-    text-align: left;
+  text-align: left;
 }
 
 .monitoring_section__1_m {
-    top: 15%;
-    max-width: 160px;
-    left: 14%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  top: 15%;
+  max-width: 160px;
+  left: 14%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-
 .monitoring_section__2_m {
-    top: 26%;
-    width: 203px;
-    right: 2%;
+  top: 26%;
+  width: 203px;
+  right: 2%;
 }
 
 .monitoring_section__3_m {
-    bottom: 20%;
-    width: 170px;
-    left: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  bottom: 20%;
+  width: 170px;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .monitoring_section__4_m {
-    bottom: 4%;
-    width: 185px;
-    right: 1%;
+  bottom: 4%;
+  width: 185px;
+  right: 1%;
 }
 
+@media only screen and (min-width: 1024px) {
+  .monitoring_section__wrapper {
+    display: inherit;
+    min-height: inherit;
+  }
 
+  .monitoring_section__image {
+    width: 60%;
+    z-index: 9;
+    position: relative;
+  }
 
-@media only screen and (min-width: 1024px)  {  
+  .monitoring_section {
+    padding: 56px;
+  }
 
+  .monitoring_section__1,
+  .monitoring_section__2,
+  .monitoring_section__3,
+  .monitoring_section__4 {
+    font-size: 18px;
+    position: absolute;
+  }
 
-    .monitoring_section__wrapper {
-        display: inherit;
-        min-height: inherit;
-    }
+  .monitoring_section__1 {
+    top: 26%;
+    left: 5%;
+  }
 
-  
-    .monitoring_section__image {
-        width: 60%;
-        z-index: 9;
-        position: relative;
-    }
+  .monitoring_section__1_text {
+    width: 45%;
+    text-align: right;
+  }
 
-    .monitoring_section {
-        padding: 56px;
-    }
+  .monitoring_section__2 {
+    top: 15%;
+    right: 10%;
+  }
 
-    .monitoring_section__1,
-    .monitoring_section__2,
-    .monitoring_section__3,
-    .monitoring_section__4 {
-        font-size: 18px;
-        position: absolute;
-    }
+  .monitoring_section__2_text {
+    display: flex;
+    justify-content: flex-end;
+  }
 
+  .monitoring_section__2_text span {
+    width: 60%;
+    text-align: right;
+  }
 
-    .monitoring_section__1 {
-        top: 26%;
-        left: 5%;
-    }
+  .monitoring_section__3 {
+    display: flex;
+    align-items: center;
+    bottom: 14%;
+    left: -1%;
+  }
 
-    .monitoring_section__1_text {
-        width: 45%;
-        text-align: right;
-    }
+  .monitoring_section__3_text {
+    width: 41%;
+    margin: 10px;
+  }
 
-    .monitoring_section__2 {
-        top: 15%;
-        right: 10%;
-    }
+  .monitoring_section__4 {
+    right: 0%;
+    bottom: 10%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 
-    .monitoring_section__2_text {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .monitoring_section__2_text span {
-        width: 60%;
-        text-align: right;
-    }
-
-
-    .monitoring_section__3 {
-        display: flex;
-        align-items: center;
-        bottom: 14%;
-        left: -1%;
-    }
-
-    .monitoring_section__3_text{
-        width: 41%;
-        margin: 10px;
-     }
-
-    .monitoring_section__4 {
-        right: 0%;
-        bottom: 10%;
-        display: inline-flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-    .monitoring_section__4_text {
-        width: 30%;
-        margin: 10px;
-    }
-    
-
+  .monitoring_section__4_text {
+    width: 30%;
+    margin: 10px;
+  }
 }
 
+@media only screen and (min-width: 1824px) {
+  .monitoring_section__image {
+    width: auto;
+    z-index: 9;
+    position: relative;
+  }
 
+  .monitoring_section {
+    padding: 56px;
+  }
 
-@media only screen and (min-width: 1824px)  {  
+  .monitoring_section__1,
+  .monitoring_section__2,
+  .monitoring_section__3,
+  .monitoring_section__4 {
+    font-size: 25px;
+  }
 
-  
-    .monitoring_section__image {
-        width: auto;
-        z-index: 9;
-        position: relative;
-    }
+  .monitoring_section__1 {
+    top: 33%;
+    left: 7%;
+  }
 
-    .monitoring_section {
-        padding: 56px;
-    }
+  .monitoring_section__1_text {
+    width: 45%;
+    text-align: right;
+  }
 
-    .monitoring_section__1,
-    .monitoring_section__2,
-    .monitoring_section__3,
-    .monitoring_section__4 {
-        font-size: 25px;
-    }
+  .monitoring_section__2 {
+    top: 15%;
+    right: 10%;
+  }
 
+  .monitoring_section__2_text {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-    .monitoring_section__1 {
-        top: 33%;
-        left: 7%;
-    }
+  .monitoring_section__2_text span {
+    width: 60%;
+    text-align: right;
+  }
 
-    .monitoring_section__1_text {
-        width: 45%;
-        text-align: right;
-    }
+  .monitoring_section__3 {
+    display: flex;
+    align-items: center;
+    bottom: 25%;
+    left: 7%;
+  }
 
-    .monitoring_section__2 {
-        top: 15%;
-        right: 10%;
-    }
+  .monitoring_section__3_text {
+    width: 41%;
+    margin: 10px;
+  }
 
-    .monitoring_section__2_text {
-        display: flex;
-        justify-content: flex-end;
-    }
+  .monitoring_section__4 {
+    right: 6%;
+    bottom: 30%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 
-    .monitoring_section__2_text span {
-        width: 60%;
-        text-align: right;
-    }
-
-
-    .monitoring_section__3 {
-        display: flex;
-        align-items: center;
-        bottom: 25%;
-        left: 7%;
-    }
-
-    .monitoring_section__3_text{
-        width: 41%;
-        margin: 10px;
-     }
-
-    .monitoring_section__4 {
-        right: 6%;
-        bottom: 30%;
-        display: inline-flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-    .monitoring_section__4_text {
-        width: 30%;
-        margin: 10px;
-    }
-    
-
+  .monitoring_section__4_text {
+    width: 30%;
+    margin: 10px;
+  }
 }

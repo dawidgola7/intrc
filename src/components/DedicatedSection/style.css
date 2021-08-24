@@ -1,85 +1,81 @@
 .wrapper_dedicatedsection {
-    position: relative;
-    padding: 5%;
-    padding-bottom: 10%;
+  position: relative;
+  padding: 5%;
+  padding-bottom: 10%;
 }
-
 
 .stream_dedicated {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    height:100%;
-    display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  display: none;
 }
 
-
 .image_dedicated {
-    position: relative;
-    padding-top:20px;
-    width:100%;
+  position: relative;
+  padding-top: 20px;
+  width: 100%;
 }
 
 .wrapper_dedicatedsection__information {
-    margin: 0 5%;
-    text-align: left;
+  margin: 0 5%;
+  text-align: left;
 }
 
 .wrapper_dedicatedsection__information--header {
-    font-size: 49px;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
+  font-size: 49px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper_dedicatedsection__information--icon {
-    width:28%;
+  width: 28%;
 }
 
 .wrapper_dedicatedsection__information--description {
-    font-size: 14px;
-    margin-top: 5%;
-    color:#707070
+  font-size: 14px;
+  margin-top: 5%;
+  color: #707070;
 }
 
 .wrapper_dedicatedsection__box--image {
-    min-height: 200px;
+  min-height: 200px;
 }
 
-@media only screen and (min-width: 1366px)  { 
+@media only screen and (min-width: 1366px) {
+  .wrapper_dedicatedsection__box--image {
+    min-height: 700px;
+  }
 
-    .wrapper_dedicatedsection__box--image {
-        min-height: 700px;
-    }
+  .wrapper_dedicatedsection {
+    padding: 0;
+    padding-bottom: 10%;
+  }
 
-    .wrapper_dedicatedsection {
-        padding:0;
-        padding-bottom: 10%;
-    }
+  .image_dedicated {
+    width: auto;
+  }
 
-    .image_dedicated {
-        width:auto;
-    }
+  .wrapper_dedicatedsection__information--header {
+    font-size: 88px;
+    margin-top: 1%;
+    max-width: 510px;
+    line-height: 80px;
+  }
 
-    .wrapper_dedicatedsection__information--header {
-        font-size: 88px;
-        margin-top: 1%;
-        max-width: 510px;
-        line-height: 80px;
-    }
+  .wrapper_dedicatedsection__information--icon {
+    width: auto;
+  }
 
-    .wrapper_dedicatedsection__information--icon {
-        width:auto;
-    }
+  .wrapper_dedicatedsection__information--description {
+    font-size: 25px;
+    margin-top: 1%;
+    max-width: 557px;
+  }
 
-    .wrapper_dedicatedsection__information--description {
-        font-size: 25px;
-        margin-top: 1%;
-        max-width: 557px;
-    }
-
-    .stream_dedicated {
-        display: block;
-    }
-    
+  .stream_dedicated {
+    display: block;
+  }
 }

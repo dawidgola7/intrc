@@ -1,100 +1,94 @@
 .wrapper_opinion {
-    background: #253140;
-    padding: 68px 20px;
-    position: relative;
-    min-height: 710px;
+  background: #253140;
+  padding: 68px 20px;
+  position: relative;
+  min-height: 710px;
 }
 
 .wrapper_opinion__header {
-    font-size: 25px;
-    font-weight: bold;
-    color:#FFFFFF;
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .wrapper_opinion_carousel {
-    height: 400px;
+  height: 400px;
 }
 
-
 .opinion_carousel__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .opinion_carousel__item--desc {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .opinion_carousel__item--desc--name {
-    font-size: 25px;
-    color:#FFFFFF;
-    font-weight: bold;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .opinion_carousel__item--desc--company {
-    color:#626971
+  color: #626971;
 }
 
 .wrapper_opinion_carousel--desc {
-    position: relative;
-    display: flex;
-    min-height: 130px;
-    align-items: center;
-    max-width: 800px;
-    margin: 70px auto 0;
+  position: relative;
+  display: flex;
+  min-height: 130px;
+  align-items: center;
+  max-width: 800px;
+  margin: 70px auto 0;
 }
 
 .wrapper_opinion_carousel--desc--text {
-    max-width: 800px;
-    color:#626971;
-    font-weight: bold;
-    margin:0 auto;
-    padding: 10px;
+  max-width: 800px;
+  color: #626971;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .left_quote {
-    position:absolute;
-    left: 0;
-    top:-55px;
+  position: absolute;
+  left: 0;
+  top: -55px;
 }
 
 .right_quote {
-    position:absolute;
-    right:0;
-    bottom:-55px;
+  position: absolute;
+  right: 0;
+  bottom: -55px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .left_quote {
+    position: absolute;
+    left: -50px;
+    top: 0;
+  }
 
-@media only screen and (min-width: 1024px)  {  
+  .right_quote {
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+  }
 
+  .wrapper_opinion__header {
+    font-size: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
-    .left_quote {
-        position:absolute;
-        left:-50px;
-        top:0;
-    }
-    
-    .right_quote {
-        position:absolute;
-        right:-50px;
-        bottom:0;
-    }
-
-    .wrapper_opinion__header {
-        font-size: 40px;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-
-
-    .wrapper_opinion_carousel {
-        height: 440px;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
- 
+  .wrapper_opinion_carousel {
+    height: 440px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }

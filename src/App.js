@@ -1,7 +1,6 @@
 /* eslint-disable no-fallthrough */
 import React, {useState} from 'react';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
-import './App.css';
 import AnimationSection from './components/AnimationSection';
 import Contact from './components/Contact';
 import DedicatedSolutionsSection from './components/DedicatedSolutionsSection';
@@ -16,7 +15,7 @@ import SectionForCity from './components/SectionForCity';
 import SectionForIt from './components/SectionForIt';
 import SupportUsersSection from './components/SupportUsersSection';
 import video1 from './movies/mov_bbb.mp4'
-
+import './App.css';
 
 function App() {
   const [sectionType, setSectionType] = useState(0);

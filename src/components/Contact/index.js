@@ -7,8 +7,6 @@ import './style.css';
 
 
 const Contact = () => {
-
-
     const [value,setValue] = useState({name:'',email:'',surname:'',company:'',personal_data:false,marketing:false});
 
     const {t} = useTranslation();

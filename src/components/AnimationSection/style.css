@@ -1,11 +1,10 @@
-
 .wrapper_animation {
-    background: #707070;
-    width: 100%;
-    padding: 25px 0;
+  background: #707070;
+  width: 100%;
+  padding: 25px 0;
 }
 
 video {
-    /* object-fit: fill; */
-    width: 100%;
+  /* object-fit: fill; */
+  width: 100%;
 }
