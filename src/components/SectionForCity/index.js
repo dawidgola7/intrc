@@ -8,7 +8,7 @@ import imageBackground3 from './image3.png';
 
 const SectionForCity = () => {
     return (
-        <>
+        <div style={{transition: "all .2s ease-in-out"}}>
             <DedicatedSection 
                 colorSection='#253140' 
                 title='for_city'
@@ -30,7 +30,7 @@ const SectionForCity = () => {
                 iconText={iconCity}
                 description='city_desc_3'
             />
-        </>
+        </div>
     )
 }
 

@@ -41,5 +41,8 @@
     "support_desc_1":"then from the resulting reality model, an extract relevant for a given moment is presented in a friendly format",
     "support_desc_2":"automatically monitoring and modelling the condition of resources, notifying the responsible people in case of an emergency",
     "support_desc_3":"showing the relationships and dependencies between the model components to enable the drawing of synthetic and analytic conclusions",
-    "support_desc_4":"delivering the information necessary for decision-making on an ongoing basis"
+    "support_desc_4":"delivering the information necessary for decision-making on an ongoing basis",
+    "opinion_header":"See the opinions of inTrack users",
+    "contact_desc_1":"Stay in touch with us",
+    "contact_desc_2":"Contact us"
 }
