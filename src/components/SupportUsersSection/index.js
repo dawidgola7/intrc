@@ -44,7 +44,7 @@ const SupportUsersSection = () => {
             <div className='wrapper_support_users_section__streams'>
                 {groupSvg.map(el => (
                     <div className={lastItem === el.id ? " item_svg item_svg__active": 'item_svg'} >
-                        {el.item(itemActive.includes(el.id) ? 'black':'rgb(37, 49, 64)' )}
+                        {el.item(itemActive.includes(el.id) ? 'blue':'rgb(37, 49, 64)' )}
                     </div>
                 ))}
             </div>

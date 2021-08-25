@@ -6,6 +6,7 @@ import cancel from './cancel.svg'
 import { useTranslation } from 'react-i18next';
 
 import './style.css';
+import { sendFormData } from '../../api';
 
 const MainForm = ({ handleSetShowForm }) => {
 
@@ -18,8 +19,7 @@ const MainForm = ({ handleSetShowForm }) => {
     }
 
     const handleClick = () => {
-      
-       console.log(value)
+     sendFormData("/form_main", value);
     }
 
     const isErrors =  !Object.values(value).every((el) => Boolean(el));

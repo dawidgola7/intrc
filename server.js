@@ -8,22 +8,73 @@ const pool = require("./db");
 app.use(cors());
 app.use(express.json());
 
-//ROUTES
-
-//create todo
-
-app.post("/todos", async (req, res) => {
+app.post("/form_main", async (req, res) => {
   try {
-    console.log(req.body);
-    const { description } = req.body;
-    const newTodo = await pool.query(
-      "INSERT INTO todo (description) VALUES($1) RETURNING *",
-      [description]
+    const {
+      name,
+      surname,
+      email,
+      company,
+      personal_data,
+      marketing,
+    } = req.body;
+
+    const insert = await pool.query(
+      "INSERT INTO form_main (name, surname, email, company, personal_data, marketing) VALUES($1, $2, $3, $4, $5, $6) RETURNING *",
+      [name, surname, email, company, personal_data, marketing]
     );
-    console.log(newTodo.rows);
-    res.json(newTodo.rows[0]);
+    res.json(insert.rows[0]);
+
     res.status(200);
   } catch (error) {
     console.error(error.message);
+    res.status(500);
   }
+});
+
+app.post("/form_case_study", async (req, res) => {
+  try {
+    const { name, email, personal_data, marketing } = req.body;
+
+    const insert = await pool.query(
+      "INSERT INTO form_case_study (name, email, personal_data, marketing) VALUES($1, $2, $3, $4) RETURNING *",
+      [name, email, personal_data, marketing]
+    );
+
+    res.json(insert.rows[0]);
+
+    res.status(200);
+  } catch (error) {
+    console.error(error.message);
+    res.status(500);
+  }
+});
+
+app.post("/form_contact", async (req, res) => {
+  try {
+    const {
+      name,
+      surname,
+      email,
+      company,
+      personal_data,
+      marketing,
+    } = req.body;
+
+    const insert = await pool.query(
+      "INSERT INTO form_contact (name, surname, email, company, personal_data, marketing) VALUES($1, $2, $3, $4, $5, $6) RETURNING *",
+      [name, surname, email, company, personal_data, marketing]
+    );
+
+    res.json(insert.rows[0]);
+
+    res.status(200);
+  } catch (error) {
+    console.error(error.message);
+    res.status(500);
+  }
+});
+
+app.listen(port, () => {
+  console.log("server has start in port");
 });
