@@ -62,7 +62,6 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
     return {
       ...slide,
       onClick: () => {
-        console.log("klik ???");
         setState({ goToSlide: index });
       },
     };
@@ -105,7 +104,6 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
   };
 
   const handleNext = () => {
-    console.log("next ??");
     if (state.goToSlide === 3) {
       setState({ goToSlide: 0 });
     } else {
@@ -125,7 +123,7 @@ const DedicatedSolutionsSection = ({ setSectionType }) => {
     setSectionType(state.goToSlide);
   }, [state.goToSlide, setSectionType]);
 
-  console.log(state.goToSlide);
+
   return (
     <div className="wrapper_dedicated_solution_section">
       <div className="wrapper_dedicated_solution_section__header">

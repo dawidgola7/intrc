@@ -6,8 +6,10 @@ import Input from "../Input";
 import Checkbox from "../Checkbox";
 import { useTranslation } from "react-i18next";
 import { sendFormData } from "../../api";
+import Loading from "../Loading";
 
 const GetCaseStudy = () => {
+  const [loading, setLoading]=useState(false)
   const [value, setValue] = useState({
     name: "",
     email: "",
@@ -21,9 +23,29 @@ const GetCaseStudy = () => {
     setValue((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleClick = () => {
-    sendFormData("/form_case_study", value);
-  };
+
+
+    const handleClick = () => {
+      setLoading(true)
+      sendFormData("/form_case_study", value)
+        .then(res => {
+          console.log(res)
+        })
+        .catch(err => {
+          console.log(err)
+        })
+        .finally(()=> {
+          setLoading(false);
+          setValue({
+            name: "",
+            email: "",
+            personal_data: false,
+            marketing: false,
+          })
+        })
+    };
+
+ 
 
   const isErrors = !Object.values(value).every((el) => Boolean(el));
 
@@ -65,9 +87,13 @@ const GetCaseStudy = () => {
           />
         </div>
         <div className="wrapper_getcasestudy__form_button">
-          <Button isErrors={isErrors} onClick={handleClick} second>
+          {loading ? (
+            <Loading/>
+          ) : (
+            <Button isErrors={isErrors} onClick={handleClick} second>
             {t("submit")}
           </Button>
+          )}
         </div>
       </div>
     </div>

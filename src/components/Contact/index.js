@@ -5,8 +5,10 @@ import Checkbox from "../Checkbox";
 import { useTranslation } from "react-i18next";
 import "./style.css";
 import { sendFormData } from "../../api";
+import Loading from "../Loading";
 
 const Contact = () => {
+  const [loading,setLoading] = useState(false)
   const [value, setValue] = useState({
     name: "",
     email: "",
@@ -23,7 +25,25 @@ const Contact = () => {
   };
 
   const handleClick = () => {
-    sendFormData("/form_contact", value);
+    setLoading(true)
+    sendFormData("/form_contact", value)
+      .then(res => {
+        console.log(res)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+      .finally(()=> {
+        setLoading(false);
+        setValue({
+          name: "",
+          email: "",
+          surname: "",
+          company: "",
+          personal_data: false,
+          marketing: false,
+        })
+      })
   };
 
   const isErrors = !Object.values(value).every((el) => Boolean(el));
@@ -84,15 +104,22 @@ const Contact = () => {
                 onClick={handleChange("marketing")}
                 text={t("confirm_marketing")}
               />
-            </div>
-            <Button
-              style={{ margin: "10px" }}
-              isErrors={isErrors}
-              onClick={handleClick}
-              second
-            >
-              {t("submit")}
-            </Button>
+            </div> 
+            {
+              loading ? (
+                <Loading/>
+              ) : (
+                <Button
+                style={{ margin: "10px" }}
+                isErrors={isErrors}
+                onClick={handleClick}
+                second
+              >
+                {t("submit")}
+              </Button>
+              )
+            }
+
           </div>
         </div>
       </div>

@@ -89,7 +89,6 @@ const OpinionSection = () => {
         return {
           ...slide,
           onClick: () => {
-            console.log('klik ???')
             setState({ goToSlide: index });
           }
         };
@@ -133,7 +132,6 @@ const OpinionSection = () => {
         yDown = null;
       };
     
-console.log(state,slides)
     return (
         <div className="wrapper_opinion">
             <div className="wrapper_opinion__header">{t('opinion_header')}</div>

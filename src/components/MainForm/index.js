@@ -7,9 +7,11 @@ import { useTranslation } from 'react-i18next';
 
 import './style.css';
 import { sendFormData } from '../../api';
+import Loading from '../Loading';
 
 const MainForm = ({ handleSetShowForm }) => {
 
+    const [loading,setLoading] = useState(false);
     const [value,setValue] = useState({name:'',email:'',surname:'',company:'',personal_data:false,marketing:false});
 
     const {t} = useTranslation();
@@ -18,9 +20,21 @@ const MainForm = ({ handleSetShowForm }) => {
         setValue(prev =>({...prev , [name]:value}))
     }
 
+
     const handleClick = () => {
-     sendFormData("/form_main", value);
-    }
+        setLoading(true)
+        sendFormData("/form_main", value)
+          .then(res => {
+            console.log(res)
+          })
+          .catch(err => {
+            console.log(err)
+          })
+          .finally(()=> {
+            setLoading(false);
+            setValue({name:'',email:'',surname:'',company:'',personal_data:false,marketing:false})
+          })
+      };
 
     const isErrors =  !Object.values(value).every((el) => Boolean(el));
 
@@ -56,7 +70,11 @@ const MainForm = ({ handleSetShowForm }) => {
                         <Checkbox onClick={handleChange('marketing')} text={t('confirm_marketing')}/>
                     </div>
                     <div className="main_form__box_button">
-                        <Button isErrors={isErrors} onClick={handleClick} second>{t('submit')}</Button>
+                        {loading ? (
+                            <Loading/>
+                        ) : (
+                            <Button isErrors={isErrors} onClick={handleClick} second>{t('submit')}</Button>
+                        )}  
                     </div>
                 </div>
             </div>
